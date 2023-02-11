@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<magic ext="rar">
+		<express>^Rar!\x1a\x07\x00</express>
+		<express>^Rar!\x1a\x07\x01\x00</express>
+		<express>^RE\x7e\x5e</express>		
+	</magic>
+	
+	<magic ext="zip">
+		<express>^PK\005\006</express>
+		<express>^PK\003\004</express>
+		<express>^PK\x07\x08PK\x03\x04</express>
+		<express>^PK\001\002</express>
+		
+	</magic>
+
+	<magic ext="elf">
+		<express>^\177ELF</express>
+	</magic>
+	
+	<magic ext="jpeg">
+		<express>^\377\330\377\340</express>
+		<express>^\x00\x00\x00\x0cJXL\x20\x0d\x0a\x87\x0a</express>		
+	</magic>
+
+	<magic ext="jpg">
+		<express>^\377\330\377\356</express>
+	</magic>
+
+	<magic ext="lua">
+		<express>^#!\ /usr/bin/lua</express>
+		<express>^#!\ /usr/local/bin/lua</express>
+		<express>^#!/usr/bin/env\ lua</express>
+		<express>^#!\ /usr/bin/env\ lua</express>
+		<express>^\033Lua</express>
+	</magic>
+
+	<magic ext="pdf">
+		<express>^%PDF-</express>
+		<express>^\012%PDF-</express>
+		<express>^\xef\xbb\xbf%PDF-</express>
+		<express>^#!\ /usr/bin/env\ lua</express>
+		<express>^\033Lua</express>
+	</magic>
+
+	<magic ext="makefile">
+		<express>\^CFLAGS</express>
+		<express>\^VPATH</express>
+		<express>\^LDFLAGS</express>
+		<express>\^all:</express>
+		<express>\^\\.PRECIOUS</express>
+		<express>\^\\.BEGIN</express>
+		<express>\^\\.include</express>
+		<express>\^\\.endif</express>
+		<express>\^SUBDIRS</express>
+	</magic>
+
+	<magic ext="db">
+		<express>^iRivDBiRiver</express>
+		<express>^SQLite\ format\ 3</express>
+		<express>^PSDB\0</express>
+		<express>^\xfe\x01</express>
+		<express>^--\ H2\ 0.5/B\ --\ \n</express>		
+	</magic>
+
+
+	<magic ext="docx">
+		<express>^PK\003\004.{26}(\[Content_Types\]\.xml|_rels/\.rels|docProps).*word/</express>	
+	</magic>
+
+	<magic ext="xlsx">
+		<express>^PK\003\004.{26}(\[Content_Types\]\.xml|_rels/\.rels|docProps).*xl/</express>	
+	</magic>
+
+	<magic ext="pptx">
+		<express>^PK\003\004.{26}(\[Content_Types\]\.xml|_rels/\.rels|docProps).*ppt/</express>	
+	</magic>
+	
+	<magic ext="vsd">
+		<express>^PK\003\004.{26}(\[Content_Types\]\.xml|_rels/\.rels|docProps).*visio/</express>	
+	</magic>
+</root>

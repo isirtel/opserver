@@ -1,0 +1,9 @@
+ACLOCAL_AMFLAGS = -I m4
+AUTOMAKE_OPTIONS=foreign
+lib_LTLIBRARIES=libopbox.la
+libopbox_la_SOURCES=hash.c uloop.c usock.c utils.c ptelnet.c vty.c parser.c 
+libopbox_la_includedir=$(prefix)/include/opbox
+libopbox_la_include_HEADERS=hash.h list.h uloop.h usock.h utils.h ptelnet.h vty.h parser.h oplist.h
+libopbox_la_CFLAGS = -W -Wall -Wchar-subscripts -Wcomment -Wformat -Wimplicit -Wmissing-braces -Wparentheses -Wswitch -Wno-unused-parameter  -Wfloat-equal -Wsign-compare -Wpointer-arith -Winline -Werror -rdynamic -g
+#libdir=$(prefix)/lib/opbox
+#lib=libopbox.la
